@@ -1,6 +1,6 @@
 @import './common/libs/swiper/swiper.min';
 @import './common/libs/swiper/animate.min';
-$h: height;
+
 li {
     list-style: none;
 }
@@ -14,7 +14,7 @@ body {
     padding: 0;
 }
 body {
-    background: #eee;
+    background:#eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
@@ -40,6 +40,8 @@ body {
     background: url('../images/bg.jpg') no-repeat;
     background-size: 100% 100%;
 }
+
+
 .swiper-slide h1 {
     justify-content: center;
     display: -webkit-box;
@@ -72,7 +74,7 @@ body {
     display: flex;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top:30px;
 }
 .swiper-slide .skill {
     justify-content: center;
@@ -97,11 +99,32 @@ body {
     font-family: "微软雅黑";
     border-radius: 50%;
 }
+.experience p{
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexox;
+    display: -webkit-flex;
+    display: flex;
+}
 .skill li {
-    margin: 20px;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexox;
+    display: -webkit-flex;
+    display: flex;
+    margin:10px;
+    width: 100%;
+}
+.skill li p{
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexox;
+    display: -webkit-flex;
+    display: flex;
+    width: 60%;
+    background: rgba(239, 245, 244,.5);
     line-height: 20px;
     padding: 5px 2px 5px 20px;
-    background: rgba(239, 245, 244,.5);
     font-family: "微软雅黑";
     border-radius: 10%;
 }
@@ -127,31 +150,32 @@ body {
     margin-bottom: 20px;
 }
 .swiper-slide .ii {
-    width: 100%;
-    #{$h}: 300px;
-    position: relative;
-    margin: 100px 0;
-}
-.absolute {
-    position: absolute;
-    top: 90px;
-    left: 30%;
-    font-size: 20px;
-}
-.ii i.icon-bubble {
     justify-content: center;
     display: -webkit-box;
     display: -ms-flexox;
     display: -webkit-flex;
     display: flex;
-    align-items: center;
-    font-size: 200px;
-    color: pink;
+    width: 100%;
+    margin-top:50px;
+    padding-top:9px;
+   
 }
+.absolute {
+    font-weight: bold;
+    width: 298px;
+    background: url(../images/icon-bubble.jpg) no-repeat;
+    padding-top: 14px;
+    font-size: 40px;
+    height: 277px;
+    display: flex;
+    align-items: center;
+    color: #05f0da;
+    justify-content: center;
+}
+
 #enter {
     width: 100%;
-    margin-bottom: 100px;
-    display: flex;
+    margin-top:15px;
     justify-content: center;
     display: -webkit-box;
     display: -ms-flexox;
@@ -166,12 +190,13 @@ body {
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    width: 200px;
-    height: 40px;
     background: white;
     border: 1px solid #404040;
     font-weight: bold;
-    font-size: 16px;
+    padding: 3px 16px;
+    background: #fff;
+    font-size: 40px;
+    color: #05f0da;
 }
 #header {
     position: absolute;
@@ -380,10 +405,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 127px 101px 58px;
+    padding: 40px 0 101px 0;
     opacity: 0.8;
-    width: 174px;
+    width:100%;
     background: white url('../images/bg_book.png') no-repeat;
+}
+#scroller .jineng li p{
+    width: 174px;
+    padding: 0 127px 0 58px;
 }
 #scroller .jineng li span:first-child {
     font-size: 14px;
@@ -396,7 +425,7 @@ body {
 #scroller .jineng li:nth-child(2) {
     background: white url('../images/bg_bookl.png') no-repeat left top;
     opacity: 0.8;
-    padding-left: 120px;
+    padding-left:60px;
 }
 .headContent {
     width: 100%;
@@ -481,7 +510,7 @@ body {
     flex-direction: column;
     opacity: 0.8;
     margin-top: 10px;
-    width: 80%;
+    width:100%;
 }
 #scroller .xiangmu li img{
     width: 200px;
@@ -490,6 +519,7 @@ body {
 .xiangmu li p {
     margin-top: 10px;
     overflow: hidden;
+     width:80%;
 }
 #scroller .xiangmu li:nth-child(2) {
     background: white url('../images/tree.png') no-repeat;
@@ -504,8 +534,12 @@ body {
     background: white url('../images/bg_1.png') no-repeat;
     padding: 15px 100px 15px 15px;
 }
- p span:first-child{
+#scroller p span:first-child{
     font-weight: bold;
+}
+
+#scroller .xiangmu .tech{
+    margin-bottom:20px;
 }
 
 .musicPart{
